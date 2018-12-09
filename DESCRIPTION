@@ -1,0 +1,11 @@
+Package: SimpFort
+Type: Package
+Title: Simple Example of using Fortran with R
+Version: 0.0.1
+Date: 2018-12-09
+Authors@R: c(person(given="Avraham", family="Adler", role=c("aut", "cph", "cre"), email="Avraham.Adler@gmail.com", comment = c(ORCID = "0000-0002-3039-0703")))
+Description: Very basic example of using compiled free-form Fortran with R as a package. Faster and safer than using the .Fortran interface.
+License: BSD_2_clause + file LICENSE
+LazyData: true
+NeedsCompilation: yes
+Suggests: testthat
