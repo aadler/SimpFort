@@ -1,12 +1,10 @@
 C_OBJS = fortloopc.o
 FT_OBJS = fortloopf.o
 
-all: $(SHLIB) clean
+all:
+	@$(MAKE) $(SHLIB)
+	@rm -f *.mod *.o
 
 $(SHLIB): $(FT_OBJS) $(C_OBJS)
 
-fortloop.mod: fortloopf.o
-fortloopc.o: fortloop.mod
-
-clean:
-	@rm -rf *.mod *.o
+fortloopc.o: fortloopf.o
